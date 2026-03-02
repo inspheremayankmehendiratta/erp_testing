@@ -69,7 +69,8 @@ export const authOptions: NextAuthOptions = {
                             }),
                         }
                     );
-
+                    console.log("Login Response:", res);
+                    console.log("Login URL:", LOGIN_VIA_PASSWORD);
                     const rawInfo = await res.json();
                     const data = JSON.parse(decrypt(rawInfo.data));
                     if (!res.ok || !data?.accessToken) {
