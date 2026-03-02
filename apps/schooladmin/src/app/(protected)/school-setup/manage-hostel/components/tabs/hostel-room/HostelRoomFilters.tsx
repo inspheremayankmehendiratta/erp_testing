@@ -4,7 +4,7 @@ import { Box, Button, Grid, Stack, Typography } from '@mui/material';
 import { Filter, RotateCcw } from 'lucide-react';
 import { Formik, Form } from 'formik';
 import { CustomInput } from '@/modules/shared/components/forms';
-import { HostelFilters } from './Hostel.types';
+import { HostelFilters } from './HostelRoom.types';
 
 
 interface FiltersProps {
